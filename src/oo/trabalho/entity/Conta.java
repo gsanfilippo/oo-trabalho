@@ -12,4 +12,12 @@ public abstract class Conta {
         this.numero = numero;
     }
 
+    public void depositar(Credito credito) {
+
+    }
+
+    public void sacar(Debito debito) {
+
+    }
+
 }

@@ -1,8 +1,20 @@
 package oo.trabalho.entity;
 
-public class Funcionario extends Pessoa {
+import oo.trabalho.IUsuario;
+
+public class Funcionario extends Pessoa implements IUsuario {
+
+    private Cargo cagro;
 
     private Double salario;
+
+    public Cargo getCagro() {
+        return cagro;
+    }
+
+    public void setCagro(Cargo cagro) {
+        this.cagro = cagro;
+    }
 
     public Double getSalario() {
         return salario;
@@ -12,4 +24,8 @@ public class Funcionario extends Pessoa {
         this.salario = salario;
     }
 
+    public Funcionario(Cargo cagro, Double salario) {
+        this.cagro = cagro;
+        this.salario = salario;
+    }
 }

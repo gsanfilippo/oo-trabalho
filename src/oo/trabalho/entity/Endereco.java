@@ -57,4 +57,12 @@ public class Endereco {
         this.uf = uf;
     }
 
+    public Endereco(String cep, String logradouro, String numero, String complemento, String cidade, String uf) {
+        this.cep = cep;
+        this.logradouro = logradouro;
+        this.numero = numero;
+        this.complemento = complemento;
+        this.cidade = cidade;
+        this.uf = uf;
+    }
 }

@@ -12,4 +12,8 @@ public class ContaPoupanca extends Conta {
         this.rentabilidadeMensal = rentabilidadeMensal;
     }
 
+    public Double calcularSaldo() {
+        return 0.00;
+    }
+
 }

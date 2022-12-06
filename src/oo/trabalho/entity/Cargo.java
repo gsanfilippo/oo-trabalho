@@ -12,4 +12,7 @@ public class Cargo {
         this.nome = nome;
     }
 
+    public Cargo(String nome) {
+        this.nome = nome;
+    }
 }

@@ -12,4 +12,12 @@ public class ContaCorrente extends Conta {
         this.limite = limite;
     }
 
+    public void transferir(Conta contaDestino, Double valor) {
+
+    }
+
+    public Double calcularSaldo() {
+        return 0.00;
+    }
+
 }
