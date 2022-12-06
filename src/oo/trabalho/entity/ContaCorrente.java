@@ -13,11 +13,12 @@ public class ContaCorrente extends Conta {
     }
 
     public void transferir(Conta contaDestino, Double valor) {
-
+        this.sacar(new Debito(valor));
+        contaDestino.depositar(new Credito(valor));
     }
 
     public Double calcularSaldo() {
-        return 0.00;
+        return this.getSaldo();
     }
 
 }
